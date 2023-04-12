@@ -2,12 +2,10 @@ import React, {Component} from "react";
 import api from "../services/api";
 
 class GetCountries extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            countries: [],
-            isLoading: true,
-        }
+
+    state = {
+        countries: [],
+        isLoading: true,
     }
 
     componentDidMount() {
